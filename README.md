@@ -5,10 +5,14 @@ A lightweight Flask web application that queries the Intercom API to pull suppor
 Built as a hackathon project to streamline support data workflows and reduce the manual effort required to extract and analyze conversation trends.
 
 
+---
+
 ## What It Does
 
 Support teams deal with large volumes of conversations that are difficult to analyze in bulk through standard tooling. This tool provides a simple browser-based UI where you can select a date range, run a script, and get a clean CSV export of conversations — including summaries, full transcripts, and issue category attributes — ready for analysis or reporting.
 
+
+---
 
 ## Features
 
@@ -20,12 +24,16 @@ Support teams deal with large volumes of conversations that are difficult to ana
 - Modular script structure — easy to add new product area filters
 
 
+---
+
 ## Tech Stack
 
 - **Python** / **Flask** — web framework and script runner
 - **Intercom REST API** — conversation data source
 - **CSV** — export format
 
+
+---
 
 ## Project Structure
 
@@ -38,6 +46,8 @@ Support teams deal with large volumes of conversations that are difficult to ana
     └── index.html      # Web UI with date range inputs
 ```
 
+
+---
 
 ## Setup
 
@@ -70,6 +80,8 @@ python app.py
 Open `http://localhost:5000` in your browser, enter a date range, and run an export.
 
 
+---
+
 ## Configuration
 
 Set the following in your `.env` file:
@@ -81,6 +93,8 @@ INTERCOM_ACCESS_TOKEN=your_token_here
 To export different product areas, duplicate one of the scripts in `/scripts` and update the `filter_conversations_by_product()` call with your target area name.
 
 
+---
+
 ## Example Output
 
 The CSV export includes:
@@ -89,6 +103,8 @@ The CSV export includes:
 |----------------|---------|------------|----------------|
 | 12345 | User unable to complete transaction... | user: My swap failed... | Transaction Failed |
 
+
+---
 
 ## Notes
 
