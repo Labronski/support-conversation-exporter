@@ -9,7 +9,7 @@ Built as a hackathon project to streamline support data workflows and reduce the
 
 ## What It Does
 
-Support teams deal with large volumes of conversations that are difficult to analyze in bulk through standard tooling. This tool provides a simple browser-based UI where you can select a date range, run a script, and get a clean CSV export of conversations — including summaries, full transcripts, and issue category attributes — ready for analysis or reporting.
+Support teams deal with large volumes of conversations that are difficult to analyze in bulk through standard tooling. This tool provides a simple browser-based UI where you can select a date range, run a script, and get a clean CSV export of conversations, including summaries, full transcripts, and issue category attributes — ready for analysis or reporting.
 
 
 ---
@@ -21,16 +21,16 @@ Support teams deal with large volumes of conversations that are difficult to ana
 - Filters conversations by product area using custom conversation attributes
 - Exports to CSV with conversation ID, AI-generated summary, transcript, and issue category
 - Handles HTML tag stripping and UTF-8 encoding for clean output
-- Modular script structure — easy to add new product area filters
+- Modular script structure, easy to add new product area filters
 
 
 ---
 
 ## Tech Stack
 
-- **Python** / **Flask** — web framework and script runner
-- **Intercom REST API** — conversation data source
-- **CSV** — export format
+- **Python** / **Flask**: web framework and script runner
+- **Intercom REST API**: conversation data source
+- **CSV**: export format
 
 
 ---
